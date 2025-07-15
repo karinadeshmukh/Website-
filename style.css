@@ -1,0 +1,161 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #e0a4dc;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #265fc7;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff6347;
+}
+
+/* Sections */
+section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Portfolio */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.project h3 {
+  margin: 10px 0 5px;
+  color: #444;
+}
+
+.project p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.project a {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.project a:hover {
+  background-color: #0056b3;
+}
+
+/* Contact */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff6347;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.socials a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.4rem;
+}
+
+.socials a:hover {
+  color: #ff6347;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
